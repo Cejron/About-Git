@@ -15,12 +15,12 @@ Git使用方法以及常用命令
 
 4.git status 查看文件状态(有没有被追踪)
 
-  >四种状态
+四种状态
 
-  >>Untracked
+  >Untracked
   
-  >>Modified
+  >Modified
   
-  >>Staged
+  >Staged
   
-  >>Committed
+  >Committed
