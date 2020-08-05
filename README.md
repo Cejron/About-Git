@@ -1,6 +1,6 @@
 # Git
 
-###目录
+### 目录
 
 **安装**
 
@@ -15,7 +15,6 @@
 ```
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
-
 ```
 
 配置下ssh钥匙,如果习惯使用HTTPS这种建库方式可能不会用到，但配一下总是好的。
