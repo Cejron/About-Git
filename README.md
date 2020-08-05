@@ -36,7 +36,7 @@ Git使用方法以及常用命令
   
 5.配置用户信息
   
-  git config --list 查看配置
+  git config --list   查看配置
   
   gitconfig--global user.name ***
   
