@@ -1,38 +1,61 @@
 # Git
 
-Git使用方法以及常用命令
+###目录
 
- ### 1.下载Git [https://git-scm.com/download/win](https://git-scm.com/download/win)
+**安装**
+**配置**
+
+#### 1.下载Git [https://git-scm.com/download/win](https://git-scm.com/download/win)
  
-得到快捷方式Git Bash
+#### 2.配置
 
-### 2.从本地创建仓库到把本地代码上传到版本库
+打开Git Bash,自报下家门
+
+'''
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+'''
+
+配置下ssh钥匙,如果习惯使用HTTPS这种建库方式可能不会用到，但配一下总是好的。
+就像考了驾照,虽然平时不开车用不到,但开车的时候就不用再考驾照。
+
+'''
+ssh-keygen -t rsa -C "yourEmail"
+
+查看本地路径c:\user\username\.ssh 的.ssh 文件下有无 id_rsa 和 id_rsa.pub
+
+进入 github->setting->SSH and GPG keys->SSh keys->New SSH key
+
+复制id_rsa.pub内容到New SSH key中
+'''
+ 
+#### 3.从本地创建仓库到把本地代码上传到版本库
 
 1.文件夹+Git Bash Here 打开控制台
 
 2.ls -a 查看当前文件目录
 
-3.git init 初始化一个空的git仓库(文件目录下会多一个隐藏的.git文件)
+3.'git init'初始化一个空的git仓库(文件目录下会多一个隐藏的.git文件)
 
-4.git status 查看文件状态(有没有被追踪)
+4.'git status' 查看文件状态(有没有被追踪)
 
   四种状态
 
-  >Untracked 未被追踪
+  > Untracked 未被追踪
   
-  >Modified 修改过但未add和commit
+  > Modified 修改过但未add和commit
   
-  >Staged add但未提交
+  > Staged add但未提交
   
-  >Committed 已提交
+  > Committed 已提交
   
   git三层结构
 
-  >工作区
+  > 工作区
   
-  >暂存区
+  > 暂存区
   
-  >版本库
+  > 版本库
   
 5.配置用户信息
   
