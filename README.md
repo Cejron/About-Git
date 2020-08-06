@@ -2,18 +2,22 @@
 
 ### 目录
 
-[安装](#install)
+[背景](#)
 
-[配置](#config)
+[安装](#1.安装)
 
-[建库](#built)
-    -[]()
-	-[]()
+[配置](#2.配置)
+
+[建库](#3.建库)
+
+- [从本地分支到远程分支建库](#)
+
+- [](#)
 
 ---
 ### 1.安装
 
-下载Git [https://git-scm.com/download/win](https://git-scm.com/download/win)
+下载Git并安装 [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 ---
 ### 2.配置
@@ -24,16 +28,16 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
 
-> 配置下ssh钥匙,如果习惯使用HTTPS这种建库方式可能不会用到，但配一下总是好的。
-就像考了驾照,虽然平时不开车用不到，但开车的时候就不用再考驾照。
+> 配置下ssh钥匙，用于ssh方式
 
-1.使用git命令 ```ssh-keygen -t rsa -C "yourEmail"```
+1.git输入命令```ssh-keygen -t rsa -C "yourEmail"```需要按3次回车。
+第1次是确认```id_rsa```和```id_rsa.pub```这两个文件生成的绝对路径，第2、第3次是用来设置push新的commit时需要输入的密码和确认密码，直接回车即默认无密码，这样以后push就不用密码
 
-2.查看本地路径 c:\user\username\.ssh的 .ssh文件 下有无 id_rsa 和 id_rsa.pub
+2.查看本地路径 c:\user\username\.ssh的 .ssh文件 下有无```id_rsa```和```id_rsa.pub```
 
-3.复制id_rsa.pub内容至粘贴板
+3.复制```id_rsa.pub```内容至粘贴板
 
-4.进入 github->setting->SSH and GPG keys->SSh keys->New SSH key 粘贴并保存
+4.进入```github->setting->SSH and GPG keys->SSh keys->New SSH key```粘贴并保存
 
 ---
 ### 3.建库
@@ -67,10 +71,6 @@ $ git config --global user.email "email@example.com"
 5.配置用户信息
   
   `git config --list`   查看配置
-  
-  `gitconfig--global user.name ***`
-  
-  `gitconfig--global user.email ***`
   
 6.`git log` 查看提交信息
 
