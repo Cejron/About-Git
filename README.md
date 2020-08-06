@@ -121,7 +121,7 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 ---
 ### 4.其他
 
-##### 常用命令
+#### 常用命令
 
 创建和显示
 
@@ -161,11 +161,11 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 
 `git reset 版本号 filename` 回滚某个文件到指定版本号
 
-##### <span id="sshhttps">ssh和https的使用和区别</span>
+#### <span id="sshhttps">ssh和https的使用和区别</span>
 
 参考  [git中使用https和ssh协议的区别以及它们的用法](https://www.cnblogs.com/wannananana/p/12059806.html)
   
-##### <span id="masterorigin">Master origin origin/Master区分</span> 
+#### <span id="masterorigin">Master origin origin/Master区分</span> 
 
 `origin` 可以看作是github服务器，名为 `origin`
 
