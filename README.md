@@ -2,15 +2,21 @@
 
 ### 目录
 
-- [安装](#install)
+[安装](#install)
 
-- [配置](#config)
+[配置](#config)
 
-- [建库](#built)
+[建库](#built)
+    -[]()
+	-[]()
 
-### 下载Git [https://git-scm.com/download/win](https://git-scm.com/download/win)
- 
-### 配置
+---
+### 1.安装
+
+下载Git [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+---
+### 2.配置
 
 > 打开Git Bash，先自报下家门
 ```
@@ -19,18 +25,18 @@ $ git config --global user.email "email@example.com"
 ```
 
 > 配置下ssh钥匙,如果习惯使用HTTPS这种建库方式可能不会用到，但配一下总是好的。
-就像考了驾照,虽然平时不开车用不到,但开车的时候就不用再考驾照。
-```
-ssh-keygen -t rsa -C "yourEmail"
+就像考了驾照,虽然平时不开车用不到，但开车的时候就不用再考驾照。
 
-查看本地路径c:\user\username\.ssh 的.ssh 文件下有无 id_rsa 和 id_rsa.pub
+1.使用git命令 ```ssh-keygen -t rsa -C "yourEmail"```
 
-进入 github->setting->SSH and GPG keys->SSh keys->New SSH key
+2.查看本地路径 c:\user\username\.ssh的 .ssh文件 下有无 id_rsa 和 id_rsa.pub
 
-复制id_rsa.pub内容到New SSH key中
-```
+3.复制id_rsa.pub内容至粘贴板
 
-#### 3.从本地创建仓库到把本地代码上传到版本库
+4.进入 github->setting->SSH and GPG keys->SSh keys->New SSH key 粘贴并保存
+
+---
+### 3.建库
 
 1.文件夹+Git Bash Here 打开控制台
 
