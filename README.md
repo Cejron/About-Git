@@ -12,8 +12,8 @@
 
 [其他](#4.其他)
 - [常用命令](#常用命令)
-- [ssh和https的区别](#ssh和https的区别)
-- [Master origin origin/Master区分](#)
+- [ssh和https的区别](#sshhttps)
+- [Master origin origin/Master区分](#masterorigin)
 ---
 ### 1.安装
 
@@ -46,7 +46,8 @@
 
 ---
 ### 3.建库
-##### 从本地分支到远程分支`Initialize this repository without a README`
+##### 从本地分支到远程分支
+`Initialize this repository without a README`
 (倾向于把本地已有仓库push到github的版本库)
 
 1.github上新建一个版本库，建库时不选`Initialize this repository with a README`
@@ -94,7 +95,10 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 8.`git push -u origin master`---第一次同步到远程。
 后面只需要`git push`即可。
 
-##### 从远程分支到本地仓库`Initialize this repository with a README`
+9.刷新github上的代码仓库。
+
+##### 从远程分支到本地仓库
+`Initialize this repository with a README`
 (倾向于把github版本库拉取到本地仓库)
 
 1.github新建版本库，建库时选择`Initialize this repository with a README`
@@ -157,11 +161,11 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 
 `git reset 版本号 filename` 回滚某个文件到指定版本号
 
-##### ssh和https的使用和区别
+##### <span id="sshhttps">ssh和https的使用和区别</span>
 
 参考  [git中使用https和ssh协议的区别以及它们的用法](https://www.cnblogs.com/wannananana/p/12059806.html)
   
-##### Master origin origin/Master区分  
+##### <span id="masterorigin">Master origin origin/Master区分</span> 
 
 `origin` 可以看作是github服务器，名为 `origin`
 
