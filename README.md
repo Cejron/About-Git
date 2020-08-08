@@ -90,6 +90,7 @@ git的三层结构
 7.远程连接github的版本库，ssh方式和https方式有所不同。
 
 ssh: `git remote add origin git@github.com:Cejron/learn.git`
+
 https: `git remote add origin https://github.com/Cejron/learn.git`
 
 8.`git push -u origin master`---第一次同步到远程。
@@ -109,7 +110,9 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 3.`git init`---初始化仓库。
 
 4.`ssh方式:` `git remote add origin git@github.com:Cejron/learn.git`
+
 或者`https方式:` `git remote add origin http://github.com/Cejron/learn.git` (仓库名.git)
+
 远程连接github的版本库。
 
 5.`git pull --rebase origin master` 将github的仓库拉到本地,远程将覆盖本地，至此github的分支就拉下来了。
