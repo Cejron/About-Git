@@ -121,6 +121,8 @@ https: `git remote add origin https://github.com/Cejron/learn.git`
 
 7.`git push -u origin master` 第一次同步到远程(github),这一步是为了之后可以直接`git push`、`git push`、`git push`。
 
+这里要提一下，要是没有提交任何更新就执行该命令会报错`Everything up-to-date`
+
 ---
 ### 4.其他
 
